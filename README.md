@@ -6,9 +6,12 @@ Sofía Cristina Durán Muñoz [22211752]; l22211752@tectijuana.edu.mx
 
 Karla Emilia Silva Pérez [22211767]; l22211767@tectijuana.edu.mx
 
+
 Gemelos Digitales
 
+
 Ingeniería Biomédica
+
 
 ## Docente
 Dr. Paul Antonio Valle Trujillo; paul.valle@tectijuana.edu.mx; https://biomath.xyz/
