@@ -34,19 +34,19 @@ El sistema simula una ruta de biosíntesis donde el flujo de masa sigue una secu
 ## Modelos para ajustar a los datos experimentales:
  El sistema se rige por un conjunto de tres Ecuaciones Diferenciales Ordinarias (EDOs) que describen las tasas de cambio de cada componente basándose en interacciones directas:
  
- Dinámica del Sustrato ($x$): 
+#### Dinámica del Sustrato ($x$): ####
  
 $$\dot{x} = a_1 x z - a_2 x$$
 
 La tasa de cambio del sustrato depende positivamente de la presencia del producto  (catalizada por el parámetro $k_1$), enfrentando una tasa de consumo basal constante representada por $k_2$.
 
-Dinámica del Intermediario ($y$):
+#### Dinámica del Intermediario ($y$): #####
 
 $$\dot{y} = b_1 y z - b_2 y$$
 
 La formación del intermediario es el resultado de la interacción o sinergia biológica entre el sustrato $x$ y el producto $z$, cuantificada por la constante cinética $k_3$. A su vez, presenta una tasa de pérdida constante $k_4$.
 
-Dinámica del Producto ($z$):
+#### Dinámica del Producto ($z$): ####
 
 $$\dot{z} = -k_3 z$$
 
