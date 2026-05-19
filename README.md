@@ -1,38 +1,41 @@
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=DrPaulValle/Hidrogeles)
-# Taller: Estimación de tasas de liberación de fármacos por hidrogeles
-<img width="1536" height="1024" alt="ChatGPT Image May 7, 2026, 12_43_10 PM" src="https://github.com/user-attachments/assets/d2d6f71e-fe25-467d-a153-cd84d1068c9a" />
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=Sofia-Duran/ProyectoGD)
+# Proyecto Dinámica Metabólica
 
-## Instructor
-Dr. Paul Antonio Valle Trujillo
+## Información de las estudiantes
+Sofía Cristina Durán Muñoz [22211752]; l22211752@tectijuana.edu.mx
+Karla Emilia Silva Pérez [22211767]; l22211767@tectijuana.edu.mx
 
-paul.valle@tectijuana.edu.mx
+Gemelos Digitales
 
-https://biomath.xyz/
+Ingeniería Biomédica
+
+## Docente
+Dr. Paul Antonio Valle Trujillo; paul.valle@tectijuana.edu.mx; https://biomath.xyz/
 
 Departamento de Ingeniería Eléctrica y Electrónica, Tecnológico Nacional de México/IT Tijuana, Blvd. Alberto Limón Padilla s/n, Tijuana, C.P. 22454, B.C., México.
 
 ## Información general
 
-En el contexto de sistemas dinámicos que describen sistemas biológicos o fisiológicos, el modelizado in silico es una extensión lógica de la experimentación in vitro controlada, es el resultado natural del gran aumento de la potencia computacional disponible a un costo que disminuye continuamente, combinando las ventajas de la experimentación in vivo e in vitro, sin someterse a las consideraciones éticas y la falta de control asociadas con los experimentos in vivo. A diferencia de los experimentos in vitro, que existen de forma aislada, los modelos in silico permiten incluir un conjunto prácticamente ilimitado de variables y parámetros, lo que hace que los resultados sean más aplicables en problemas del mundo real. La experimentación in silico ha dado lugar al paradigma denominado como "gemelos digitales" (en inglés digital twins); en esencia, los gemelos digitales son una réplica o representación digital de un proceso o sistema del mundo real, donde por replica se refiere a un modelo computacional desarrollado con base en datos experimentales y características especiales que le permiten conectar lo físico con lo virtual con el propósito de mejorar el rendimiento de un sistema, detectar y prevenir fallas, y realizar predicciones sobre su respuesta ante diferentes estímulos o escenarios de operación; una definición más formal establece que: un gemelo digital es un conjunto de modelos adaptativos que emulan el comportamiento de un sistema físico en un sistema virtual obteniendo datos en tiempo real para actualizarse a lo largo de su ciclo de vida; replica al sistema físico para predecir fallas y oportunidades de cambio, prescribir acciones en tiempo real para optimizar y/o mitigar eventos inesperados observando y evaluando el perfil operativo del sistema. En el campo particular de la Biología de Sistemas, un gemelo digital se presenta como un algoritmo o conjunto de algoritmos computacionales desarrollados con base en modelos mecanicistas de un organismo vivo, esto con el objetivo de emular su fisiología para ilustrar su dinámica en el corto y en el largo plazo, así como predecir su respuesta a diferentes estímulos endógenos y exógenos.
+El diseño de Gemelos Digitales en la biología de sistemas representa una herramienta crucial para comprender y predecir el comportamiento dinámico de los procesos metabólicos celulares. El propósito de este proyecto consiste en diseñar, parametrizar y validar un modelo computacional de alta fidelidad capaz de replicar la evolución temporal de una cascada metabólica interactiva compuesta por tres especies esenciales: un sustrato ($x$), un intermediario ($y$) y un producto final ($z$), utilizando datos experimentales. El sistema biológico fue modelado matemáticamente mediante un conjunto de tres Ecuaciones Diferenciales Ordinarias (EDOs) de primer orden acopladas, donde destacan interacciones no lineales complejas como el estímulo del producto sobre el sustrato ($k_1 z$) y la generación sinérgica del intermediario ($k_3 x z$). Ante la ausencia de una solución analítica, las ecuaciones se integraron numéricamente mediante el Método de Heun en MATLAB y se acoplaron a un algoritmo de regresión no lineal (fitnlm) asistido por barreras matemáticas para estimar con precisión sus seis parámetros cinéticos ($k_1$ a $k_6$). Adicionalmente, se calcularon analíticamente los puntos de equilibrio numérico para evaluar la estabilidad a largo plazo y la capacidad de homeostasis del sistema frente a perturbaciones. Los resultados muestran que el Gemelo Digital optimizado logra un ajuste de alta fidelidad respecto a las curvas experimentales de concentración versus tiempo, demostrando que la arquitectura propuesta captura eficazmente los mecanismos de autorregulación celular y consolidándose como una herramienta matemática predictiva válida para futuras aplicaciones de control y optimización biotecnológica.
 
-## Objetivo del taller
+## Objetivo del proyecto
 
-Determinar la tasa de liberación del hidrogel N36-2MBA3 con base en los datos experimentales de la siguiente figura.
-<img width="1387" height="535" alt="paper" src="https://github.com/user-attachments/assets/eae73151-9476-4b0b-b10d-286792700391" />
+Desarrollar un Gemelo Digital predictivo de una cascada metabólica celular a partir de datos experimentales, utilizando un sistema de ecuaciones diferenciales ordinarias ajustado mediante regresión no lineal, para validar y simular la dinámica de autorregulación del sistema.
 
-Un hidrogel es un material formado por redes tridimensionales de polímeros hidrófilos capaces de absorber y retener grandes cantidades de agua sin disolverse. Debido a su alta biocompatibilidad y similitud con tejidos biológicos, los hidrogeles son ampliamente utilizados en aplicaciones biomédicas como liberación controlada de fármacos, ingeniería de tejidos y sistemas de administración terapéutica.
-La estimación de la tasa de liberación de un fármaco es importante porque permite comprender y predecir cómo el medicamento es liberado desde el hidrogel hacia el organismo a lo largo del tiempo. Esto ayuda a diseñar tratamientos más eficientes y seguros, optimizando la dosis, reduciendo efectos secundarios y garantizando concentraciones terapéuticas adecuadas durante periodos prolongados. Además, el modelado matemático de la liberación permite comparar formulaciones, ajustar parámetros cinéticos y desarrollar sistemas inteligentes de administración controlada de medicamentos.
 
-#### Palabras clave: Bioestadística; Farmacocinética; Hidrogel; MATLAB [fitnlm]; Modelo matemático; Regresión no lineal.
+El sistema simula una ruta de biosíntesis donde el flujo de masa sigue una secuencia lógica (x &rarr; y &rarr; z). La característica distintiva de este modelo es su mecanismo de control por retroalimentación negativa (Feedback Inhibition). En este proceso, la acumulación del producto final (z) inhibe la velocidad de entrada del sustrato inicial mediante una cinética de Hill. Este comportamiento es fundamental para la supervivencia celular, ya que permite mantener la homeostasis y evitar el desperdicio de recursos energéticos.
 
-## Modelos para ajustar a los datos experimentales: Farmacocinética de primer orden
-Ecuación diferencial ordinaria de primer orden:
+#### Palabras clave: Cascada metabólica; Gemelo digital; Homeostasis; Inhibición por retroalimentación; Regresión no lineal.
 
+## Modelos para ajustar a los datos experimentales:
+ El sistema se rige por un conjunto de tres Ecuaciones Diferenciales Ordinarias (EDOs) que describen las tasas de cambio de cada componente basándose en interacciones directas:
+ Dinámica del Sustrato (x): 
+ 
 $$
 \dot{x}=k\left( \beta -x\right).
 $$
 
-Función del tiempo: 
+La tasa de cambio del sustrato depende positivamente de la presencia del producto  (catalizada por el parámetro ), enfrentando una tasa de consumo basal constante representada por .
 
 $$
 x\left( t\right) =\beta \left( 1-e^{-kt}\right).
