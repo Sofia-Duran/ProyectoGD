@@ -33,11 +33,11 @@ El sistema simula una ruta de biosíntesis donde el flujo de masa sigue una secu
  
 $$\dot{x} = a_1 x z - a_2 x$$
 
-La tasa de cambio del sustrato depende positivamente de la presencia del producto  (catalizada por el parámetro ), enfrentando una tasa de consumo basal constante representada por .
+La tasa de cambio del sustrato depende positivamente de la presencia del producto  (catalizada por el parámetro k_1), enfrentando una tasa de consumo basal constante representada por k_2.
 
-$$
-x\left( t\right) =\beta \left( 1-e^{-kt}\right).
-$$
+
+
+$$\dot{y} = b_1 y z - b_2 y$$
 
 ## Regresión no lineal
 La regresión no lineal se basa en el método de mínimos cuadrados, permite ajustar modelos complejos a conjuntos de datos experimentales con diversas variables dependientes e independientes, además de distintos parámetros que describen las relaciones entre ellas; funciona mediante un enfoque iterativo y se debe elegir una estimación inicial para el valor de cada parámetro.
