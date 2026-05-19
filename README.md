@@ -50,14 +50,12 @@ $$
 
 ## Referencias
 
-\[1] M. A. González‐Ayón, J.A. Sañudo‐Barajas, L.A. Picos‐Corrales, & A. Licea‐Claverie, "PNVCL‐PEGMA nanohydrogels with tailored transition temperature for controlled delivery of 5‐fluorouracil", Journal of Polymer Science Part A: Polymer Chemistry, vol. 53, issue 22, pp. 2662-2672, Aug 2015. DOI: https://doi.org/10.1002/pola.27766.
+\[1] H. Motulsky, Intuitive biostatistics: a nonmathematical guide to statistical thinking. 4th ed. Oxford, New York, USA: Oxford University Press, 2014.
 
-\[2] H. Motulsky, Intuitive biostatistics: a nonmathematical guide to statistical thinking. 4th ed. Oxford, New York, USA: Oxford University Press, 2014.
+\[2] Slavkova, K. P., Patel, S. H., Cacini, Z., Kazerouni, A. S., Gardner, A. L., Yankeelov, T. E., & Hormuth, D. A. (2023). Mathematical modelling of the dynamics of image-informed tumor habitats in a murine model of glioma. Scientific reports, 13(1), 2916. DOI: https://doi.org/10.1038/s41598-023-30010-6.
 
-\[3] Slavkova, K. P., Patel, S. H., Cacini, Z., Kazerouni, A. S., Gardner, A. L., Yankeelov, T. E., & Hormuth, D. A. (2023). Mathematical modelling of the dynamics of image-informed tumor habitats in a murine model of glioma. Scientific reports, 13(1), 2916. DOI: https://doi.org/10.1038/s41598-023-30010-6.
+\[3] Garfinkel, Alan, Jane Shevtsov, and Yina Guo. Modeling life: the mathematics of biological systems. Springer International Publishing AG, 2017.
 
-\[4] Garfinkel, Alan, Jane Shevtsov, and Yina Guo. Modeling life: the mathematics of biological systems. Springer International Publishing AG, 2017.
+\[4] Bryan, Kurt. Differential equations: A toolbox for modeling the world. Simiode, 2022. Permalink: https://www.simiode.org/resources/8307.
 
-\[5] Bryan, Kurt. Differential equations: A toolbox for modeling the world. Simiode, 2022. Permalink: https://www.simiode.org/resources/8307.
-
-\[6] MathWorks. (n.d.) fitnlm Fit nonlinear regression model [Online]. Available: https://www.mathworks.com/help/stats/fitnlm.html.
+\[5] MathWorks. (n.d.) fitnlm Fit nonlinear regression model [Online]. Available: https://www.mathworks.com/help/stats/fitnlm.html.
