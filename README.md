@@ -23,21 +23,31 @@ El diseño de Gemelos Digitales en la biología de sistemas representa una herra
 Desarrollar un Gemelo Digital predictivo de una cascada metabólica celular a partir de datos experimentales, utilizando un sistema de ecuaciones diferenciales ordinarias ajustado mediante regresión no lineal, para validar y simular la dinámica de autorregulación del sistema.
 
 
-El sistema simula una ruta de biosíntesis donde el flujo de masa sigue una secuencia lógica (x &rarr; y &rarr; z). La característica distintiva de este modelo es su mecanismo de control por retroalimentación negativa (Feedback Inhibition). En este proceso, la acumulación del producto final (z) inhibe la velocidad de entrada del sustrato inicial mediante una cinética de Hill. Este comportamiento es fundamental para la supervivencia celular, ya que permite mantener la homeostasis y evitar el desperdicio de recursos energéticos.
+El sistema simula una ruta de biosíntesis donde el flujo de masa sigue una secuencia lógica ($x$ &rarr; $y$ &rarr; $z$). La característica distintiva de este modelo es su mecanismo de control por retroalimentación negativa (Feedback Inhibition). En este proceso, la acumulación del producto final ($z$) inhibe la velocidad de entrada del sustrato inicial mediante una cinética de Hill. Este comportamiento es fundamental para la supervivencia celular, ya que permite mantener la homeostasis y evitar el desperdicio de recursos energéticos.
 
 #### Palabras clave: Cascada metabólica; Gemelo digital; Homeostasis; Inhibición por retroalimentación; Regresión no lineal.
 
 ## Modelos para ajustar a los datos experimentales:
  El sistema se rige por un conjunto de tres Ecuaciones Diferenciales Ordinarias (EDOs) que describen las tasas de cambio de cada componente basándose en interacciones directas:
- Dinámica del Sustrato (x): 
+ 
+ Dinámica del Sustrato ($x$): 
  
 $$\dot{x} = a_1 x z - a_2 x$$
 
-La tasa de cambio del sustrato depende positivamente de la presencia del producto  (catalizada por el parámetro k_1), enfrentando una tasa de consumo basal constante representada por k_2.
+La tasa de cambio del sustrato depende positivamente de la presencia del producto  (catalizada por el parámetro $k_1$), enfrentando una tasa de consumo basal constante representada por $k_2$.
 
-
+Dinámica del Intermediario ($y$):
 
 $$\dot{y} = b_1 y z - b_2 y$$
+
+La formación del intermediario es el resultado de la interacción o sinergia biológica entre el sustrato $x$ y el producto $z$, cuantificada por la constante cinética $k_3$. A su vez, presenta una tasa de pérdida constante $k_4$.
+
+Dinámica del Producto ($z$):
+
+$$\dot{z} = -k_3 z$$
+
+El producto se genera directamente a partir del intermediario $y$ (con velocidad $k_5$) y sufre una degradación o salida del sistema proporcional a su propia concentración, dictada por la constante $k_6$.
+
 
 ## Regresión no lineal
 La regresión no lineal se basa en el método de mínimos cuadrados, permite ajustar modelos complejos a conjuntos de datos experimentales con diversas variables dependientes e independientes, además de distintos parámetros que describen las relaciones entre ellas; funciona mediante un enfoque iterativo y se debe elegir una estimación inicial para el valor de cada parámetro.
