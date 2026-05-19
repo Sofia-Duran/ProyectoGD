@@ -31,9 +31,7 @@ El sistema simula una ruta de biosíntesis donde el flujo de masa sigue una secu
  El sistema se rige por un conjunto de tres Ecuaciones Diferenciales Ordinarias (EDOs) que describen las tasas de cambio de cada componente basándose en interacciones directas:
  Dinámica del Sustrato (x): 
  
-$$
-\dot{x}=k\left( \beta -x\right).
-$$
+$$\dot{x} = a_1 x z - a_2 x$$
 
 La tasa de cambio del sustrato depende positivamente de la presencia del producto  (catalizada por el parámetro ), enfrentando una tasa de consumo basal constante representada por .
 
