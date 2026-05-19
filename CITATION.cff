@@ -1,0 +1,58 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Dinámica metabólica
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Sofía C.
+    family-names: Durán
+    email: l22211752@tectijuana.edu.mx
+    affiliation: ' Tecnológico Nacional de México / Instituto Tecnológico de Tijuana'
+    orcid: 'https://orcid.org/0009-0009-7052-8162'
+  - given-names: K. Emilia
+    family-names: Silva
+    email: l22211767@tectijuana.edu.mx
+    affiliation: ' Tecnológico Nacional de México / Instituto Tecnológico de Tijuana'
+repository-code: 'https://github.com/Sofia-Duran/ProyectoGD'
+abstract: >-
+  El desarrollo de Gemelos Digitales en la biología de
+  sistemas representa una herramienta crucial para
+  comprender y predecir el comportamiento dinámico de los
+  procesos metabólicos celulares. El propósito de este
+  proyecto consiste en diseñar, parametrizar y validar un
+  modelo computacional capaz de replicar la evolución
+  temporal de una cascada metabólica interactiva compuesta
+  por tres especies esenciales: un sustrato (x), un
+  intermediario (y) y un producto final (z). El sistema
+  biológico fue modelado matemáticamente mediante un
+  conjunto de tres Ecuaciones Diferenciales Ordinarias
+  (EDOs) de primer orden acopladas, donde destacan
+  interacciones no lineales complejas como el estímulo del
+  producto sobre el sustrato y la generación sinérgica del
+  intermediario. Las ecuaciones se integraron numéricamente
+  mediante el Método de Heun en MATLAB y se acoplaron a un
+  algoritmo de regresión no lineal para estimar con
+  precisión sus seis parámetros cinéticos. Adicionalmente,
+  se calcularon analíticamente los puntos de equilibrio
+  numérico para evaluar la estabilidad a largo plazo y la
+  capacidad de homeostasis del sistema frente a
+  perturbaciones. Los resultados muestran que el Gemelo
+  Digital optimizado logra un ajuste de alta fidelidad
+  respecto a las curvas experimentales de concentración
+  versus tiempo, demostrando que captura eficazmente los
+  mecanismos de autorregulación celular y consolidándose
+  como una herramienta matemática predictiva válida para
+  futuras aplicaciones.
+keywords:
+  - Cascada metabólica
+  - Gemelo digital
+  - Homeostasis
+  - Inhibición por retroalimentación
+  - Regresión no lineal
+license: BSD-2-Clause
+version: '1.0'
+date-released: '2026-05-19'
