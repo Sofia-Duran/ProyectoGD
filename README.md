@@ -20,7 +20,7 @@ Departamento de Ingeniería Eléctrica y Electrónica, Tecnológico Nacional de 
 
 ## Información general
 
-El diseño de Gemelos Digitales en la biología de sistemas representa una herramienta crucial para comprender y predecir el comportamiento dinámico de los procesos metabólicos celulares. El propósito de este proyecto consiste en diseñar, parametrizar y validar un modelo computacional de alta fidelidad capaz de replicar la evolución temporal de una cascada metabólica interactiva compuesta por tres especies esenciales: un sustrato ($x$), un intermediario ($y$) y un producto final ($z$), utilizando datos experimentales. El sistema biológico fue modelado matemáticamente mediante un conjunto de tres Ecuaciones Diferenciales Ordinarias (EDOs) de primer orden acopladas, donde destacan interacciones no lineales complejas como el estímulo del producto sobre el sustrato ($k_1 z$) y la generación sinérgica del intermediario ($k_3 x z$). Ante la ausencia de una solución analítica, las ecuaciones se integraron numéricamente mediante el Método de Heun en MATLAB y se acoplaron a un algoritmo de regresión no lineal (fitnlm) asistido por barreras matemáticas para estimar con precisión sus seis parámetros cinéticos ($k_1$ a $k_6$). Adicionalmente, se calcularon analíticamente los puntos de equilibrio numérico para evaluar la estabilidad a largo plazo y la capacidad de homeostasis del sistema frente a perturbaciones. Los resultados muestran que el Gemelo Digital optimizado logra un ajuste de alta fidelidad respecto a las curvas experimentales de concentración versus tiempo, demostrando que la arquitectura propuesta captura eficazmente los mecanismos de autorregulación celular y consolidándose como una herramienta matemática predictiva válida para futuras aplicaciones de control y optimización biotecnológica.
+El diseño de Gemelos Digitales en la biología de sistemas representa una herramienta crucial para comprender y predecir el comportamiento dinámico de los procesos metabólicos celulares. El propósito de este proyecto consiste en diseñar, parametrizar y validar un modelo computacional de alta fidelidad capaz de replicar la evolución temporal de una cascada metabólica interactiva compuesta por tres especies esenciales: un sustrato ($x$), un intermediario ($y$) y un producto final ($z$), utilizando datos experimentales. El sistema biológico fue modelado matemáticamente mediante un conjunto de tres Ecuaciones Diferenciales Ordinarias (EDOs) de primer orden acopladas, donde destacan interacciones no lineales complejas como el estímulo del producto sobre el sustrato ($a_1 z$) y la generación sinérgica del intermediario ($b_1 x z$). Ante la ausencia de una solución analítica, las ecuaciones se integraron numéricamente mediante el Método de Heun en MATLAB y se acoplaron a un algoritmo de regresión no lineal (fitnlm) asistido por barreras matemáticas para estimar con precisión sus seis parámetros cinéticos ($a_1$ a $k_3$). Adicionalmente, se calcularon analíticamente los puntos de equilibrio numérico para evaluar la estabilidad a largo plazo y la capacidad de homeostasis del sistema frente a perturbaciones. Los resultados muestran que el Gemelo Digital optimizado logra un ajuste de alta fidelidad respecto a las curvas experimentales de concentración versus tiempo, demostrando que la arquitectura propuesta captura eficazmente los mecanismos de autorregulación celular y consolidándose como una herramienta matemática predictiva válida para futuras aplicaciones de control y optimización biotecnológica.
 
 ## Objetivo del proyecto
 
@@ -38,19 +38,19 @@ El sistema simula una ruta de biosíntesis donde el flujo de masa sigue una secu
  
 $$\dot{x} = a_1 x z - a_2 x$$
 
-La tasa de cambio del sustrato depende positivamente de la presencia del producto  (catalizada por el parámetro $k_1$), enfrentando una tasa de consumo basal constante representada por $k_2$.
+La tasa de cambio del sustrato depende positivamente de la presencia del producto  (catalizada por el parámetro $a_1$), enfrentando una tasa de consumo basal constante representada por $a_2$.
 
 #### Dinámica del Intermediario ($y$): #####
 
 $$\dot{y} = b_1 y z - b_2 y$$
 
-La formación del intermediario es el resultado de la interacción o sinergia biológica entre el sustrato $x$ y el producto $z$, cuantificada por la constante cinética $k_3$. A su vez, presenta una tasa de pérdida constante $k_4$.
+La formación del intermediario es el resultado de la interacción o sinergia biológica entre el sustrato $x$ y el producto $z$, cuantificada por la constante cinética $k_1$. A su vez, presenta una tasa de pérdida constante $b_2$.
 
 #### Dinámica del Producto ($z$): ####
 
 $$\dot{z} = -k_3 z$$
 
-El producto se genera directamente a partir del intermediario $y$ (con velocidad $k_5$) y sufre una degradación o salida del sistema proporcional a su propia concentración, dictada por la constante $k_6$.
+El producto sufre una degradación o salida del sistema proporcional a su propia concentración, dictada por la constante $k_3$.
 
 
 ## Regresión no lineal
