@@ -1,5 +1,5 @@
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=Sofia-Duran/ProyectoGD)
-# Proyecto Dinámica Metabólica
+# Proyecto Dinámica de una Cascada Metabólica
 
 ## Información de las estudiantes
 Sofía Cristina Durán Muñoz [22211752]; l22211752@tectijuana.edu.mx
@@ -52,6 +52,7 @@ $$\dot{z} = -k_3 z$$
 
 El producto sufre una degradación o salida del sistema proporcional a su propia concentración, dictada por la constante $k_3$.
 
+![Diagrama representativo](diagrama.png)
 
 ## Regresión no lineal
 La regresión no lineal se basa en el método de mínimos cuadrados, permite ajustar modelos complejos a conjuntos de datos experimentales con diversas variables dependientes e independientes, además de distintos parámetros que describen las relaciones entre ellas; funciona mediante un enfoque iterativo y se debe elegir una estimación inicial para el valor de cada parámetro.
