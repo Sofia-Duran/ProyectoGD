@@ -53,7 +53,7 @@ $$\dot{z} = -k_3 z$$
 El producto sufre una degradación o salida del sistema proporcional a su propia concentración, dictada por la constante $k_3$.
 
 <div align="center">
-  <img src="diagrama.png" width="500" alt="Diagrama representativo">
+  <img src="diagrama.png" width="500" alt="Diagrama biológico representativo">
 </div>
 
 ## Regresión no lineal
@@ -62,6 +62,16 @@ La regresión no lineal se basa en el método de mínimos cuadrados, permite aju
 $$
 \sum\limits_{i=1}^{n}\left[ x_{i}-f\left( \hat{x}_{i},\mathbf{\rho }\right) \right] ^{2}.
 $$
+
+## Actividades a realizar
+
+
+## Lista de archivos
+- Cuaderno computacional de MATLAB [.mlx].
+- Modelo de Simulink [.slx].
+- Imágenes de las simulaciones [.pdf].
+- Análisis matemático [.pdf].
+- Diagrama biológico del sistema [.png].
 
 ## Referencias
 
