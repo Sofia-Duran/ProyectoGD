@@ -64,7 +64,14 @@ $$
 $$
 
 ## Actividades a realizar
-
+1. Uso de regresión simbólica a través del software Eureqa para la obtención de las ecuaciones diferenciales correspondientes al modelo matemático no lineal, así como ajuste paramétrico mediante la función fitnlm de MATLAB empleando el método de mínimos cuadrados.
+2. Tratamiento y estandarización de datos experimentales relacionados con el metabolismo celular mediante técnicas de suavizado gaussiano (smoothdata) y el cálculo de parámetros bioestadísticos, tales como error estándar, margen de error, intervalos de confianza al 95 %, valor p, coeficiente de determinación (R²), suma de cuadrados residuales (RSS) y Criterio de Información de Akaike (AIC).
+3. Determinación analítica y numérica de los tres puntos de equilibrio del sistema.
+4. Cálculo de la Matriz Jacobiana y análisis de los valores propios (eigenvalores) con el propósito de establecer las condiciones de estabilidad local asociadas a cada punto de equilibrio.
+5. Elaboración del diagrama de bloques en Simulink para la integración de las ecuaciones diferenciales del sistema, utilizando el solver ode45.
+6. Diseño de un esquema biológico que represente la dinámica del sistema y la interacción entre sus variables, utilizando recursos gráficos BioRender.
+7. Simulación predictiva del modelo a 2t mediante el método numérico de Heun, con el objetivo de predecir la dinámica del sistema más allá del intervalo experimental.
+8. Incorporación de un parámetro de control $u$ en el modelo de Simulink, representando una tasa de suministro externo constante del producto final $z_3$​, con el propósito de analizar el efecto de una intervención sobre la dinámica metabólica.
 
 ## Lista de archivos
 - Cuaderno computacional de MATLAB [.mlx].
