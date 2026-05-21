@@ -52,7 +52,9 @@ $$\dot{z} = -k_3 z$$
 
 El producto sufre una degradación o salida del sistema proporcional a su propia concentración, dictada por la constante $k_3$.
 
-![Diagrama representativo](diagrama.png)
+<div align="center">
+  <img src="diagrama.png" width="500" alt="Diagrama representativo">
+</div>
 
 ## Regresión no lineal
 La regresión no lineal se basa en el método de mínimos cuadrados, permite ajustar modelos complejos a conjuntos de datos experimentales con diversas variables dependientes e independientes, además de distintos parámetros que describen las relaciones entre ellas; funciona mediante un enfoque iterativo y se debe elegir una estimación inicial para el valor de cada parámetro.
